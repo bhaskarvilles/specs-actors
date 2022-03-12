@@ -151,7 +151,7 @@ func main() {
 		market.State{},
 		// method params and returns
 		//market.WithdrawBalanceParams{}, // Aliased from v0
-		// market.PublishStorageDealsParams{}, // Aliased from v0
+		market.PublishStorageDealsParams{}, // Aliased from v0
 		market.PublishStorageDealsReturn{},
 		//market.ActivateDealsParams{}, // Aliased from v0
 		market.VerifyDealsForActivationParams{},
@@ -161,8 +161,8 @@ func main() {
 		market.ComputeDataCommitmentReturn{},
 		//market.OnMinerSectorsTerminateParams{}, // Aliased from v0
 		// other types
-		//market.DealProposal{}, // Aliased from v0
-		//market.ClientDealProposal{},
+		market.DealProposal{},       // Changed in v7
+		market.ClientDealProposal{}, // Changed in v7
 		market.SectorDeals{},
 		market.SectorWeights{},
 		market.DealState{},
